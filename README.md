@@ -26,7 +26,7 @@ $$
  \mathcal{H}(\boldsymbol{v}, \boldsymbol{h}) = - \sum_{i=1}^{N_h} c_i h_i  - \sum_{j=1}^{N_v} b_j v_j - \sum_{j=1}^{N_v} \sum_{i=1}^{N_h}  h_i W_{ij} v_j
 $$
 
-In the [paper](https://arxiv.org/abs/2309.02292), we showed that the effective Hamiltonian that describes the equilibrium statistics of visible variables can be expanded as a Generalized Ising Model (GIM) Hamiltonian, which also accounts for higher-order interactions.
+In the paper, we showed that the effective Hamiltonian that describes the equilibrium statistics of visible variables can be expanded as a Generalized Ising Model (GIM) Hamiltonian, which also accounts for higher-order interactions.
 
 $$ 
 \mathcal{H}(\boldsymbol{\sigma}) = - \sum_{j} H_j \sigma_j - \sum_{j_1 > j_2} J_{j_1 j_2}^{(2)} \sigma_{j_1} \sigma_{j_2} + \dots + \sum_{j_1 > \cdots > j_n} J_{j_1 \cdots j_n}^{(n)} \sigma_{j_1} \cdots \sigma_{j_n} + \dots 
