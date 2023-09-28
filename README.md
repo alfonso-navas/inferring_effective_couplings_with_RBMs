@@ -1,4 +1,5 @@
 # inferring effective couplings with RBMs
+[![\badge\](https://badgen.net/badge/arXiv/2309.02292/red)](https://arxiv.org/abs/2309.02292)
 
 Code for implementing the mapping between a Restricted Boltzmann Machines and Generalized Ising model introduced in the paper *Inferring effective couplings with Restricted Boltzmann Machines* by Aurélien Decelle, Cyril Furtlehner, Beatriz Seoane, and Alfonso Navas. 
 
