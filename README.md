@@ -1,8 +1,12 @@
 # inferring effective couplings with RBMs
 
-![Static Badge](https://img.shields.io/badge/arXiv%3A2309.02292-Inferring%20effective%20couplings%20with%20Restricted%20Boltzmann%20Machines)
+[![badge](https://badgen.net/badge/arXiv/2309.02292/red)](https://arxiv.org/abs/2309.02292)
 
 Code for implementing the mapping between a Restricted Boltzmann Machines and Generalized Ising model introduced in the paper *Inferring effective couplings with Restricted Boltzmann Machines* by Aurélien Decelle, Cyril Furtlehner, Beatriz Seoane, and Alfonso Navas. 
+
+<p align="center">
+  <img src=https://github.com/alfonso-navas/inferring_effective_couplings_with_RBMs/blob/main/RBM_inference_figure.png?raw=true
+</p>
 
 ## Introduction
 
@@ -22,18 +26,15 @@ $$
  \mathcal{H}(\boldsymbol{v}, \boldsymbol{h}) = - \sum_{i=1}^{N_h} c_i h_i  - \sum_{j=1}^{N_v} b_j v_j - \sum_{j=1}^{N_v} \sum_{i=1}^{N_h}  h_i W_{ij} v_j
 $$
 
-In Ref. [1], we showed that the effective Hamiltonian that describes the equilibrium statistics of visible variables can be expanded as a Generalized Ising Model (GIM) Hamiltonian, which also accounts for higher-order interactions.
+In the paper, we showed that the effective Hamiltonian that describes the equilibrium statistics of visible variables can be expanded as a Generalized Ising Model (GIM) Hamiltonian, which also accounts for higher-order interactions.
 
 $$ 
 \mathcal{H}(\boldsymbol{\sigma}) = - \sum_{j} H_j \sigma_j - \sum_{j_1 > j_2} J_{j_1 j_2}^{(2)} \sigma_{j_1} \sigma_{j_2} + \dots + \sum_{j_1 > \cdots > j_n} J_{j_1 \cdots j_n}^{(n)} \sigma_{j_1} \cdots \sigma_{j_n} + \dots 
 $$
 
-Here, we will provide the practical implementation of the mapping between the RBM parameters $\eta_j, \theta_i, w_{ij}$ and the couplings $H_{j}$ and $J_{j_1, j_2}^{(2)}$ introduced in [1]. 
+In this repo, we will provide the practical implementation of the mapping between the RBM parameters $\eta_j, \theta_i, w_{ij}$ and the couplings $H_{j}$ and $J_{j_1, j_2}^{(2)}$. 
 
 ## Contents
 - [couplings_inference:](https://github.com/alfonso-navas/inferring_effective_couplings_with_RBMs/blob/main/couplings_inference.ipynb) Detailed presentation of the Python functions that implement the mapping combined with examples of how to use them.
 - [Ising_samples:](https://github.com/alfonso-navas/inferring_effective_couplings_with_RBMs/tree/main/Ising_samples) Training dataset used in the RBM models provided as examples.
 - [models:](https://github.com/alfonso-navas/inferring_effective_couplings_with_RBMs/tree/main/models) Trained RBM models used as examples.
-
-## References
-[1] Decelle, A., Furtlehner, C., Navas Gómez, A. J., & Seoane, B. (2023). Inferring effective couplings with Restricted Boltzmann Machines. arXiv preprint arXiv:2309.02292.
